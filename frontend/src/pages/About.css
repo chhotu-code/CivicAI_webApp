@@ -1,0 +1,73 @@
+/* src/pages/About.css */
+
+.about-container {
+  max-width: 1000px; /* Limit width for better readability */
+  margin: auto; /* Center align */
+  padding: 20px; /* Padding around content */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h1 {
+  text-align: center; /* Center title */
+  color: #333; /* Darker text color */
+}
+
+.about-description {
+  font-size: 1.1em; /* Slightly larger font size */
+  color: #555; /* Gray text color for better readability */
+  line-height: 1.6; /* Increased line height for spacing */
+  margin-bottom: 20px; /* Space below the description */
+  text-align: justify; /* Justify text for a cleaner look */
+}
+
+.mission-vision {
+  display: flex; /* Use flexbox to display mission and vision side by side */
+  justify-content: space-between; /* Space out the sections */
+  margin-top: 20px; /* Space above sections */
+  gap: 20px; /* Gap between mission and vision sections */
+}
+
+.mission, .vision {
+  flex: 1; /* Take equal space */
+  background-color: #ffffff; /* White background for sections */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside sections */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+  color: #333; /* Darker text color for headings */
+}
+
+.about-image {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 10px; /* Space above images */
+}
+
+.about-container {
+  padding: 20px; /* Padding for content */
+  text-align: center; /* Center-align text */
+  margin-top: 60px; /* Space from the top (accounting for fixed navbar) */
+}
+
+.mission-vision {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out mission and vision */
+  margin-top: 20px; /* Margin above */
+}
+
+.mission,
+.vision {
+  flex: 1; /* Equal width for both sections */
+  margin: 10px; /* Margin between sections */
+}
+
+@media (max-width: 768px) {
+  .mission-vision {
+      flex-direction: column; /* Stack vertically on small screens */
+  }
+}

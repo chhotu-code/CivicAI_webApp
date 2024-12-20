@@ -1,0 +1,76 @@
+/* src/components/Footer.css */
+.footer-container {
+  background-color: #007BFF; /* Primary color */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Top and bottom padding */
+}
+
+.footer-content {
+  max-width: 1000px; /* Limit width for better readability */
+  margin: auto; /* Center align */
+  display: flex; /* Flex layout for alignment */
+  justify-content: space-between; /* Space out sections */
+  align-items: center; /* Center align vertically */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.footer-logo {
+  flex: 1; /* Allow this section to grow */
+  text-align: left; /* Align text to the left */
+}
+
+.footer-links {
+  flex: 1; /* Allow this section to grow */
+  text-align: center; /* Center text */
+}
+
+.footer-socials {
+  flex: 1; /* Allow this section to grow */
+  text-align: right; /* Align text to the right */
+}
+
+.footer-links ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+  margin: 10px 0; /* Space between links */
+}
+
+.footer-links a {
+  color: #fff; /* White link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.footer-links a:hover {
+  color: #ddd; /* Change color on hover */
+}
+
+.social-icons {
+  display: flex; /* Flex layout for icons */
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.social-icons a {
+  color: #fff; /* White icon color */
+  margin: 0 10px; /* Space between icons */
+  transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align items */
+  }
+  .footer-logo, .footer-links, .footer-socials {
+    text-align: center; /* Center align all sections on small screens */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+}

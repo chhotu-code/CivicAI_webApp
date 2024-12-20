@@ -1,0 +1,140 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  position: relative;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #fff;
+  margin: 0 15px; /* Adjust the margin to create space */
+  text-decoration: none;
+}
+
+.logout-button {
+  margin-left: 10px;
+  background: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block; /* Show toggle button on small screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    background-color: #007BFF;
+    z-index: 1;
+  }
+
+  .navbar-links.open {
+    display: flex; /* Show links when open */
+  }
+
+  .navbar-links a {
+    margin: 10px 0; /* Vertical spacing for mobile links */
+  }
+}
+
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Position it at the top */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #fff;
+  margin: 0 15px; /* Adjust the margin to create space */
+  text-decoration: none;
+}
+
+.logout-button {
+  margin-left: 10px;
+  background: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block; /* Show toggle button on small screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    background-color: #007BFF;
+    z-index: 1;
+  }
+
+  .navbar-links.open {
+    display: flex; /* Show links when open */
+  }
+
+  .navbar-links a {
+    margin: 10px 0; /* Vertical spacing for mobile links */
+  }
+}
+
